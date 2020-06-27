@@ -1,0 +1,30 @@
+.order-page-container {
+    min-height: 68vh;
+    width: 100%;
+}
+
+.order-page-form-container {
+    min-height: 55vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: gainsboro;
+    padding: 2vw;
+    margin: 1vh;
+    background-color: white;
+}
+
+.order-element-container {
+    display: flex;
+    margin: 2vh;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.order-element {
+    margin: 1vh;
+    flex: 0 0 calc(16.66% - 20px);
+}

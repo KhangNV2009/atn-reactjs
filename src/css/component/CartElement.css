@@ -1,0 +1,13 @@
+.cart-element-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: gainsboro;
+    border-radius: 5px;
+    padding: 1vh;
+    margin-top: 1vh;
+}

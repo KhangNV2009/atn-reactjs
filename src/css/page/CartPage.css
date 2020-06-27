@@ -1,0 +1,21 @@
+.cart-page-container {
+    min-height: 68vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-page-form-container {
+    min-height: 55vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: gainsboro;
+    padding: 2vw;
+    margin: 1vh;
+    background-color: white;
+}

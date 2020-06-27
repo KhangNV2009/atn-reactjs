@@ -1,0 +1,17 @@
+.add-product-page-container {
+    min-height: 68vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-product-page-form-container {
+    height: 55vh;
+    width: 25vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

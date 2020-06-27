@@ -1,0 +1,52 @@
+.ant-carousel .slick-slide {
+    height: 70vh;
+    background: #FFFB29;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+  
+.ant-carousel .slick-slide h3 {
+    color: #FFF;
+}
+
+.image-carousel {
+    height: 45vh;
+    width: 20vw;
+    border-radius: 5px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.carousel-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    margin: 2vh;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.card-element {
+    margin: 1vh;
+    flex: 0 0 calc(16.66% - 20px);
+}

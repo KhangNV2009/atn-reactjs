@@ -1,0 +1,17 @@
+.register-page-container {
+    height: 68vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-page-form-container {
+    height: 60vh;
+    width: 20vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
