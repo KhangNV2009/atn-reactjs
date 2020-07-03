@@ -74,7 +74,7 @@ export default function AddOrderPage() {
                     }
                 })
                 orderList.map(async item => {
-                    if (item.quantity > 0) {
+                    if (item.product[1] != undefined && item.quantity != undefined && item.quantity > 0) {
                         await fetch(`${BaseUrl}/api/order-detail/add?orderId=${position}&productId=${item.product[1]}&quantity=${item.quantity}`, {
                             method: 'POST',
                             headers: {
