@@ -74,13 +74,15 @@ export default function AddOrderPage() {
                     }
                 })
                 orderList.map(async item => {
-                    await fetch(`${BaseUrl}/api/order-detail/add?orderId=${position}&productId=${item.product[1]}&quantity=${item.quantity}`, {
-                        method: 'POST',
-                        headers: {
-                            Accept: 'application/json',
-                            'Content-Type': 'application/json'
-                        }
-                    })
+                    if (item.product[1] != undefined && item.quantity != undefined) {
+                        await fetch(`${BaseUrl}/api/order-detail/add?orderId=${position}&productId=${item.product[1]}&quantity=${item.quantity}`, {
+                            method: 'POST',
+                            headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                    }
                 })
             } catch (error) {
                 console.log(error)
@@ -171,7 +173,7 @@ export default function AddOrderPage() {
                         </Select>
                     </Form.Item>
                     <Form.Item name="quantity" rules={[{ required: true, message: 'Please input your quantity!' }]}>
-                        <InputNumber type="number" placeholder="Quantity"/>
+                        <InputNumber type="number" placeholder="Quantity" />
                     </Form.Item>
                     <Form.Item shouldUpdate={true}>{() => (<Button type="primary" htmlType="submit">Add</Button>)}</Form.Item>
                     <Form.Item shouldUpdate={true}>{() => (<Button onClick={() => postOrder()} type="default">Done</Button>)}
